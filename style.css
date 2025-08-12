@@ -133,6 +133,10 @@ input[type="checkbox"]{
     background: rgb(85, 100, 230);
 }
 
+.copy-btn:active{
+    background: rgb(55, 69, 192);
+}
+
 .strength-indicator{
     margin-top: 20px;
     padding: 10px;

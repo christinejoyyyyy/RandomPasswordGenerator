@@ -13,25 +13,25 @@
 
         <div class="form-grp">
             <label for="passLength">Password Length</label>
-            <input type="number" class= "pass-length" id="passLength" min="12" max="128" value="12">
+            <input type="number" class= "pass-length" id="passLength" min="5" max="128" value="5">
         </div>
 
         <div class="checkbox-grp">
             <div class="checkbox-item">
-                <input type="checkbox" id="uppercase" checked>
-                <label for="uppercase">Uppercase (A-Z)</label>
+                <input type="checkbox" id="includeUppercase" checked>
+                <label for="includeUppercase">Uppercase (A-Z)</label>
             </div>
             <div class="checkbox-item">
-                <input type="checkbox" id="lowercase" checked>
-                <label for="lowercase">Lowercase (a-z)</label>
+                <input type="checkbox" id="includeLowercase" checked>
+                <label for="includeLowercase">Lowercase (a-z)</label>
             </div>
             <div class="checkbox-item">
-                <input type="checkbox" id="numbers" checked>
-                <label for="numbers">Numbers (0-9)</label>
+                <input type="checkbox" id="includeNumbers" checked>
+                <label for="includeNumbers">Numbers (0-9)</label>
             </div>
             <div class="checkbox-item">
-                <input type="checkbox" id="symbols" checked>
-                <label for="symbols">Symbols (!@#$%)</label>
+                <input type="checkbox" id="includeSymbols" checked>
+                <label for="includeSymbols">Symbols (!@#$%)</label>
             </div>
         </div>
         
@@ -39,7 +39,7 @@
 
         <div class="result-cont">
             <input type="text" id="passwordResult" placeholder="generated password here" disabled>
-            <button class="copy-btn" id= "copyBtn"onclick="copyPassword()">Copy</button>
+            <button class="copy-btn" id= "copyBtn" onclick="copyPassword()">Copy</button>
         </div>
 
         <div class="strength-indicator" id="strengthIndicator" ></div>
